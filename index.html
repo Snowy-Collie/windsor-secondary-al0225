@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Plans Website</title>
+    <link rel="stylesheet" href="./sytles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <span class="en">Alex's Future Plan</span>
+                <span class="tw hidden">鄭張力的未來計畫</span>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><button onclick="location.href='#plan10'">10 Year Plans</a></li>
+                <li><button onclick="location.href='#college'">College Choice</a></li>
+                <li><button onclick="location.href='#career'">Career Choice</a></li>
+                <li><button onclick="location.href='#pl'">Personal Life</a></li>
+                <li><button id="language-toggle">台灣正體</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="plan10">
+        <h2>
+            <span class="en">My 10 Year Plan</span>
+            <span class="tw hidden">我的十年計劃</span>
+        </h2>
+        <p>
+            <span class="en">In the next 10 years, I want to succesfully graduate from Windsor Secondary, and akso succesfully graduate from a university in Canada, and work here.</span>
+            <span class="tw hidden">在接下來的十年，我想成功的從Windsor中學畢業，並且考取一所好的加拿大的大學，並留在這裡工作。</span>
+        </p>
+    </section>
+    <section id="college">
+        <h2>
+        <span class="en">College Choice</span>
+        <span class="tw hidden">大學選擇</span>
+    </h2>
+    </section>
+    <section id="career">
+        <h2>
+            <span class="en"></span>
+            <span class="tw hidden"></span>
+        </h2>
+    </section>
+    <section id="pl">
+        <h2>
+            <span class="en"></span>
+            <span class="tw hidden"></span>
+        </h2>
+    </section>
+    <script>
+        document.getElementById('language-toggle').addEventListener('click', function () {
+            const isEnglish = this.textContent === 'English';
+            document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden', !isEnglish));
+            document.querySelectorAll('.tw').forEach(el => el.classList.toggle('hidden', isEnglish));
+            this.textContent = isEnglish ? '台灣正體' : 'English';
+        });
+    </script>
+</body>
+</html>
