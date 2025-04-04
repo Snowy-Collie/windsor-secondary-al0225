@@ -4,66 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Plans Website</title>
-    <link rel="stylesheet" href="./sytles.css">
+    <link rel="stylesheet" href="./styles.css"> <!-- Corrected typo in "styles" -->
 </head>
 <body>
-    <header>
-        <div>
+    <header class="site-header">
+        <div class="header-title">
             <h1>
                 <span class="en">Alex's Future Plan</span>
                 <span class="tw hidden">鄭張力的未來計畫</span>
             </h1>
         </div>
-        <nav>
+        <nav class="main-nav">
             <ul>
-                <li><button onclick="location.href='#plan10'">10 Year Plans</a></li>
-                <li><button onclick="location.href='#college'">College Choice</a></li>
-                <li><button onclick="location.href='#career'">Career Choice</a></li>
-                <li><button onclick="location.href='#pl'">Personal Life</a></li>
-                <li><button id="language-toggle">台灣正體🇹🇼</button></li>
+                <li><button onclick="location.href='#plan10'" class="nav-button">10 Year Plans</button></li>
+                <li><button onclick="location.href='#college'" class="nav-button">College Choice</button></li>
+                <li><button onclick="location.href='#career'" class="nav-button">Career Choice</button></li>
+                <li><button onclick="location.href='#personal-life'" class="nav-button">Personal Life</button></li>
+                <li><button id="language-toggle" class="lang-toggle">台灣正體🇹🇼</button></li>
             </ul>
         </nav>
     </header>
-    <section id="plan10">
-        <h2>
-            <span class="en">My 10 Year Plan</span>
-            <span class="tw hidden">我的十年計劃</span>
+
+    <section id="plan10" class="section">
+        <h2 class="section-title">
+            <span class="en">My 10-Year Plan</span>
+            <span class="tw hidden">我的十年計畫</span>
         </h2>
-        <p>
-            <span class="en">In the next 10 years, I want to succesfully graduate from Windsor Secondary, and akso succesfully graduate from a university in Canada, and work here.</span>
-            <span class="tw hidden">在接下來的十年，我想成功的從Windsor中學畢業，並且考取一所好的加拿大的大學，並留在這裡工作。</span>
+        <p class="section-content">
+            <span class="en">Over the next 10 years, I aim to successfully graduate from Windsor Secondary School and then from a prestigious university in Canada. My goal is to secure a fulfilling job here, contributing to my field while enjoying the opportunities this country offers.</span>
+            <span class="tw hidden">在接下來的十年，我計畫成功從Windsor中學畢業，然後進入加拿大一所頂尖大學就讀，並最終在這裡找到一份有意義的工作，同時享受這個國家提供的各種機會。</span>
         </p>
     </section>
-    <section id="college">
-        <h2>
+
+    <section id="college" class="section">
+        <h2 class="section-title">
             <span class="en">College Choice</span>
             <span class="tw hidden">大學選擇</span>
         </h2>
-        <p>
-            <span class="en">I want to go to UBC or the University of Alberta because I heard the computer science programs there are excellent. I want to study engineering or software or hardware because I am very interested in this.</span>
-            <span class="tw hidden">我想考上UBC大學或者阿爾伯塔省大學，因為我聽說那裡的計算機專業很出色。我想學習工科或者軟硬件的專業，因為我對這個很感興趣。</span>
+        <p class="section-content">
+            <span class="en">I aspire to attend either the University of British Columbia (UBC) or the University of Alberta, as I’ve heard their computer science programs are exceptional. I am passionate about studying engineering, software, or hardware, fields that align with my interests and career goals.</span>
+            <span class="tw hidden">我希望能進入不列顛哥倫比亞大學(UBC)或阿爾伯塔省大學，因為我聽說那裡的計算機科學專業非常出色。我熱衷於學習工程、軟件或硬件相關專業，這些領域與我的興趣和職業目標高度契合。</span>
         </p>
     </section>
-    <section id="career">
-        <h2>
+
+    <section id="career" class="section">
+        <h2 class="section-title">
             <span class="en">Career Choice</span>
             <span class="tw hidden">職業選擇</span>
         </h2>
-        <p>
-            <span class="en">When I enter the society, I want to be a software engineer or hardware designer. I want to make some games about anvition, like the one I'm making now, <a href="https://acsrs.acsstudio.site/">ACSRS: Rewriting the Sky</a>.</span>
-            <span class="tw hidden">當我踏入社會，我想做軟件工程師或者硬件設計師之類的工作。我想做一些有關於航天的遊戲，就比如我現在正在製作的《ACSRS：重寫天空》。</span>
+        <p class="section-content">
+            <span class="en">Upon entering the workforce, I aspire to become a software engineer or hardware designer. I am particularly interested in developing aviation-themed games, similar to my current project, <a href="https://acsrs.acsstudio.site/" class="project-link">ACSRS: Rewriting the Sky</a>, which combines my passion for technology and aviation history.</span>
+            <span class="tw hidden">當我進入職場後，我希望成為軟件工程師或硬件設計師。我特別有興趣開發與航空主題相關的遊戲，類似於我目前正在製作的《ACSRS：重寫天空》，這個項目結合了我對技術和航空歷史的熱情。</span>
         </p>
     </section>
-    <section id="pl">
-        <h2>
+
+    <section id="personal-life" class="section">
+        <h2 class="section-title">
             <span class="en">Personal Life</span>
             <span class="tw hidden">個人生活</span>
         </h2>
-        <p>
-            <span class="en">I want to work in Canada because the environment here is comfortable and I can play in the snow in winter. I also want to make some fun games, as mentioned above.</span>
-            <span class="tw hidden">我想在這裡工作，因為這裡的環境很舒適，還可以在冬天玩雪。我還想製作一些有趣的遊戲，正如上面說的那樣。</span>
+        <p class="section-content">
+            <span class="en">I plan to build my career in Canada because I find the environment here comfortable and enjoyable, especially with the opportunity to enjoy winter activities like playing in the snow. Additionally, I look forward to creating engaging and fun games, as mentioned earlier, to share my passion with others.</span>
+            <span class="tw hidden">我計畫在加拿大發展我的職業，因為我覺得這裡的環境舒適且宜人，特別是冬天可以玩雪的機會。同時，我期待製作有趣的遊戲，與他人分享我的熱情，正如前面所述。</span>
         </p>
     </section>
+
     <script>
         document.getElementById('language-toggle').addEventListener('click', function () {
             const isEnglish = this.textContent === 'English🇨🇦';
