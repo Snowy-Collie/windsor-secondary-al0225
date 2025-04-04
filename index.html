@@ -20,7 +20,7 @@
                 <li><button onclick="location.href='#college'">College Choice</a></li>
                 <li><button onclick="location.href='#career'">Career Choice</a></li>
                 <li><button onclick="location.href='#pl'">Personal Life</a></li>
-                <li><button id="language-toggle">台灣正體</button></li>
+                <li><button id="language-toggle">台灣正體🇹🇼</button></li>
             </ul>
         </nav>
     </header>
@@ -36,28 +36,40 @@
     </section>
     <section id="college">
         <h2>
-        <span class="en">College Choice</span>
-        <span class="tw hidden">大學選擇</span>
-    </h2>
+            <span class="en">College Choice</span>
+            <span class="tw hidden">大學選擇</span>
+        </h2>
+        <p>
+            <span class="en">I want to go to UBC or the University of Alberta because I heard the computer science programs there are excellent. I want to study engineering or software or hardware because I am very interested in this.</span>
+            <span class="tw hidden">我想考上UBC大學或者阿爾伯塔省大學，因為我聽說那裡的計算機專業很出色。我想學習工科或者軟硬件的專業，因為我對這個很感興趣。</span>
+        </p>
     </section>
     <section id="career">
         <h2>
-            <span class="en"></span>
-            <span class="tw hidden"></span>
+            <span class="en">Career Choice</span>
+            <span class="tw hidden">職業選擇</span>
         </h2>
+        <p>
+            <span class="en">When I enter the society, I want to be a software engineer or hardware designer. I want to make some games about anvition, like the one I'm making now, <a href="https://acsrs.acsstudio.site/">ACSRS: Rewriting the Sky</a>.</span>
+            <span class="tw hidden">當我踏入社會，我想做軟件工程師或者硬件設計師之類的工作。我想做一些有關於航天的遊戲，就比如我現在正在製作的《ACSRS：重寫天空》。</span>
+        </p>
     </section>
     <section id="pl">
         <h2>
-            <span class="en"></span>
-            <span class="tw hidden"></span>
+            <span class="en">Personal Life</span>
+            <span class="tw hidden">個人生活</span>
         </h2>
+        <p>
+            <span class="en">I want to work in Canada because the environment here is comfortable and I can play in the snow in winter. I also want to make some fun games, as mentioned above.</span>
+            <span class="tw hidden">我想在這裡工作，因為這裡的環境很舒適，還可以在冬天玩雪。我還想製作一些有趣的遊戲，正如上面說的那樣。</span>
+        </p>
     </section>
     <script>
         document.getElementById('language-toggle').addEventListener('click', function () {
-            const isEnglish = this.textContent === 'English';
+            const isEnglish = this.textContent === 'English🇨🇦';
             document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden', !isEnglish));
             document.querySelectorAll('.tw').forEach(el => el.classList.toggle('hidden', isEnglish));
-            this.textContent = isEnglish ? '台灣正體' : 'English';
+            this.textContent = isEnglish ? '台灣正體🇹🇼' : 'English🇨🇦';
         });
     </script>
 </body>
