@@ -23,6 +23,12 @@ body {
     font-family: "Kosugi Maru", sans-serif;
 }
 
+/* Global Styles */
+.sect{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Header Styles */
 .site-header {
     background-color: #1a237e; /* Dark blue for a futuristic feel */
@@ -68,7 +74,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 40px 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white; /* Default text color for sections */
@@ -76,7 +82,7 @@ body {
 }
 
 #plan10 {
-    background-image: url('path-to-plan10-background.jpg'); /* Replace with your image */
+    background-image: url('bg1.png'); /* Replace with your image */
 }
 
 #college {
