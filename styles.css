@@ -1,11 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
 .hidden {
     display: none;
 }
-.tw{
-  font-family: "Kosugi Maru", sans-serif;
+
+.tw, .en {
+    font-family: "Kosugi Maru", sans-serif;
 }
-.en{
-  font-family: "Kosugi Maru", sans-serif;
+
+/* Global Styles */
+.sect{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a237e; /* Dark blue for a futuristic feel */
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-title h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Main Navigation Styles */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.nav-button, .lang-toggle {
+  background-color: #4a90e2; /* Light blue for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.nav-button:hover, .lang-toggle:hover {
+  background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Section Styles */
+.section {
+  background-size: cover; /* For background images */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white; /* Default text color for sections */
+  text-align: center;
+}
+
+.section-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.project-link {
+  color: #ffeb3b; /* Bright yellow for links */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #fdd835; /* Slightly darker yellow on hover */
+}
+
+/* Specific Section Backgrounds */
+#plan10 {
+  background-image: url('bg1.png'); /* Replace with your image */
+}
+
+#college {
+  background-image: url('bg2.png'); /* Replace with your image */
+}
+
+#career {
+  background-image: url('bg3.png'); /* Replace with your image */
+}
+
+#personal-life {
+  background-image: url('bg4.png'); /* Replace with your image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .site-header {
+      padding: 10px;
+  }
+
+  .header-title h1 {
+      font-size: 2rem;
+  }
+
+  .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .nav-button, .lang-toggle {
+      width: 80%;
+      padding: 8px 15px;
+  }
+
+  .section {
+      padding: 20px 10px;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  .section-content p {
+      font-size: 1rem;
+  }
 }
