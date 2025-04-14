@@ -1,26 +1,35 @@
+/*Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Lexend+Deca:wght@100..900&display=swap');
 
+/* Basic CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Lexend Deca", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
-    padding: 20px;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+  padding: 20px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .tw, .en {
-    font-family: "Kosugi Maru", sans-serif;
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 /* Global Styles */
@@ -31,7 +40,7 @@ body {
 
 /* Header Styles */
 .site-header {
-  background-color: #1a237e; /* Dark blue for a futuristic feel */
+  background-color: #1a227eb0; 
   color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -55,7 +64,7 @@ body {
 }
 
 .nav-button, .lang-toggle {
-  background-color: #4a90e2; /* Light blue for buttons */
+  background-color: #4a90e2; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -66,24 +75,24 @@ body {
 }
 
 .nav-button:hover, .lang-toggle:hover {
-  background-color: #357abd; /* Darker blue on hover */
+  background-color: #357abd; 
 }
 
 /* Section Styles */
 .section {
-  background-size: cover; /* For background images */
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 20px;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: white; /* Default text color for sections */
+  color: white; 
   text-align: center;
 }
 
 .section-content {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 20px;
   border-radius: 5px;
   display: inline-block;
@@ -101,30 +110,61 @@ body {
 }
 
 .project-link {
-  color: #ffeb3b; /* Bright yellow for links */
+  color: #ffeb3b; 
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .project-link:hover {
-  color: #fdd835; /* Slightly darker yellow on hover */
+  color: #fdd835; 
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000000b0; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.footer-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.github-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 /* Specific Section Backgrounds */
+body{
+  background-image: url('bg0.png');
+}
 #plan10 {
-  background-image: url('bg1.png'); /* Replace with your image */
+  background-image: url('bg1.png'); 
 }
 
 #college {
-  background-image: url('bg2.png'); /* Replace with your image */
+  background-image: url('bg2.png'); 
 }
 
 #career {
-  background-image: url('bg3.png'); /* Replace with your image */
+  background-image: url('bg3.png'); 
 }
 
 #personal-life {
-  background-image: url('bg4.png'); /* Replace with your image */
+  background-image: url('bg4.png'); 
 }
 
 /* Responsive Styles */
